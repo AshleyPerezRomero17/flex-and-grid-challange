@@ -15,8 +15,7 @@ body {
   box-sizing: border-box;
 }
 
-.flex-outer,
-.flex-inner {
+.flex-outer {
   list-style-type: none;
   padding: 0;
 }
@@ -26,16 +25,10 @@ body {
   margin: 0 auto;
 }
 
-.flex-outer li,
-.flex-inner {
+.flex-outer li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.flex-inner {
-  padding: 0 8px;
-  justify-content: space-between;
 }
 
 .flex-outer>li:not(:last-child) {
@@ -54,8 +47,7 @@ body {
   max-width: 220px;
 }
 
-.flex-outer>li>label+*,
-.flex-inner {
+.flex-outer>li>label+* {
   flex: 1 0 220px;
 }
 
@@ -76,10 +68,6 @@ body {
   background: #333;
   color: #f2f2f2;
   border-radius: 2px;
-}
-
-.flex-inner li {
-  width: 100px;
 }
 
 .header {
