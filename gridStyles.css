@@ -1,0 +1,81 @@
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #0997c7;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+.grid {
+  list-style-type: none;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.grid li input,
+.grid li textarea {
+  padding: 15px;
+  border: none;
+  width: 58%;
+}
+
+.grid>li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.grid li label,
+.grid li p {
+  padding: 8px;
+  font-weight: 300;
+}
+
+.grid>li>label {
+  padding-right: 80px;
+}
+
+.grid>li:not(:last-child) {
+  text-align: end;
+}
+
+
+.grid button {
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  border-radius: 2px;
+}
+
+.button-container {
+  text-align: end;
+}
+
+@media only screen and (max-width: 1000px)  {
+  .grid {
+    padding-left: 0;
+  }
+
+  .grid li input,
+  .grid li textarea {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .grid>li:not(:last-child)  {
+    text-align: left;
+  }
+}
